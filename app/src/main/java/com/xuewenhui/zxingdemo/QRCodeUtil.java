@@ -21,6 +21,16 @@ import java.util.Map;
  * 创建时间：17.7.7 19:40
  */
 public class QRCodeUtil {
+    /**
+     * 生成二维码Bitmap
+     *
+     * @param content   内容
+     * @param widthPix  图片宽度
+     * @param heightPix 图片高度
+     * @param logoBm    二维码中心的Logo图标（可以为null）
+     * @param filePath  用于存储二维码图片的文件路径
+     * @return 生成二维码及保存文件是否成功
+     */
 
     public static boolean createQRImage(String content, int widthPix, int heightPix, Bitmap logoBm, String filePath) {
         try {
